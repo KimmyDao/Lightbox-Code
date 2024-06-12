@@ -19,7 +19,7 @@ void setup() {
 }
 
 void loop() {
-   pixels.setBrightness(l);
+   pixels.setBrightness(l/12);
 
   x = analogRead(5);
   y = analogRead(4);
