@@ -24,7 +24,7 @@ void loop() {
   x = analogRead(5);
   y = analogRead(4);
   z = analogRead(2);
-  l = analogRead(2);
+  l = analogRead(1);
   
    Serial.println(x);
    Serial.println(y);
