@@ -23,8 +23,8 @@ void loop() {
 
   x = analogRead(5);
   y = analogRead(4);
-  z = analogRead(2);
-  l = analogRead(1);
+  z = analogRead(2); // x, y, and z are the pentiometers
+  l = analogRead(1); // l is the slider
   
    Serial.println(x);
    Serial.println(y);
@@ -33,7 +33,7 @@ void loop() {
    delay(100);
    pixels.clear();
   for (int l = 0; l < NUMPIXELS; l++) {
-     pixels.setPixelColor(l, pixels.Color (x / 4, y / 4, z / 4));
+     pixels.setPixelColor(l, pixels.Color (x / 4, y / 4, z / 4)); // Divison helps control the values from the pentiometer
    
 
 
